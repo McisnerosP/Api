@@ -15,3 +15,25 @@ def api_inventory():
 
 
 
+
+
+
+
+# class Dato(BaseModel):
+#     valor:str
+
+# # @info_api.post("/site")
+# # def api_site(varibale:Sites):
+# #     return get(f'https://inventory-restapi-h36rii5v2q-ue.a.run.app/infopersite/"{varibale.name}"').json()
+# @info_api.post("/site/")
+# async def api_site(val:Dato):
+#     return get(f'https://inventory-restapi-h36rii5v2q-ue.a.run.app/infopersite/"{val.valor}"').json()
+   
+# @info_api.get("/site/{item}")
+# def search(item:str):
+#     print(item)
+#     print("as there")
+#     return post(f'https://inventory-restapi-h36rii5v2q-ue.a.run.app/infopersite/"{" ":item}')
+#     print(item)
+#     print("hello there")
+
