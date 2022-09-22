@@ -15,7 +15,7 @@ class User(BaseModel):
 @auth_routes.post("/login")
 async def login(user: User):
     print(user.dict())
-    if user.username == 'iptuser' and user.password == 'useriptpasword45':
+    if user.username == getenv('USER') and user.password == getenv('PASSWORD'):
         return write_token(user.dict())
     else:
         return JSONResponse(content={"message": "User not found"}, status_code=404)
