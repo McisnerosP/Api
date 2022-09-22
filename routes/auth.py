@@ -4,9 +4,7 @@ from os import getenv
 from fastapi.responses import JSONResponse
 from pydantic import BaseModel, EmailStr
 from functions_jwt import write_token,validate_token
-from dotenv import load_dotenv
 
-#load_dotenv()
 auth_routes =APIRouter()
 class User(BaseModel):
     username : str
