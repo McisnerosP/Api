@@ -19,8 +19,8 @@ class Dato(BaseModel):
 
 @info_api.get("/site/{valor}")
 def api_site(valor):
-    print(requests.post('https://inventory-restapi-h36rii5v2q-ue.a.run.app/infopersite/',json={"name":valor}))
-    return requests.post('https://inventory-restapi-h36rii5v2q-ue.a.run.app/infopersite/',json={"name":valor}).text
+    #print(requests.post('https://inventory-restapi-h36rii5v2q-ue.a.run.app/infopersite/',json={"name":valor}))
+    return requests.post(f"{getenv('LINK_PERSITE')}",json={"name":valor}).json()
    
     
 
